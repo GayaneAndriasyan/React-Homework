@@ -32,12 +32,14 @@ class Counter extends Component{
         const {count}=this.state;
         return(
             <div>
-                <h1>Count {count}</h1>
-                <button className={"button1"}onClick={this.addCount}>Increment</button>
-                <h1> </h1>
-                <button className={"button2"}onClick={this.SubCount}>Decrement</button>
-                <h1> </h1>
-                <button className={"button3"}onClick={this.Reset}>Reset</button>
+                <div className="flex">
+                <button className={"button0"}>Count {count}</button>
+                </div>
+                <div className="flex1">
+                     <button className={"button1"}onClick={this.addCount}>Increment</button>
+                     <button className={"button3"}onClick={this.Reset}>Reset</button>
+                    <button className={"button2"}onClick={this.SubCount}>Decrement</button>
+                </div>
             </div>
         )
     }
